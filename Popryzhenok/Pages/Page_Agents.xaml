@@ -28,7 +28,8 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
@@ -47,9 +48,10 @@
                         <Image Grid.Column="0" Grid.Row="0" DataContext="{Binding Logo}"></Image>
                         <TextBlock Text="{Binding AgentType.Title}"   Grid.Row="0"/>
                         <TextBlock Text="{Binding Title,StringFormat={} | {0}}" HorizontalAlignment="Center" Grid.Row="0" />
-                    <TextBlock Text="{Binding Telephone}" Grid.Row="1" HorizontalAlignment="Right"/>
-                    <TextBlock Text="{Binding Priority.Priority, StringFormat={}Приоритетность: {0}}"  Grid.Row="2" HorizontalAlignment="Left"/>
-                        <Button x:Name="But_edit" Click="But_edit_Click" HorizontalAlignment="Right" Content="Изменить" Grid.Column="2" />
+                        <TextBlock Text="{Binding Implementation.Quantity}" Grid.Row="1" HorizontalAlignment="Right"/>
+                        <TextBlock Text="{Binding Telephone}" Grid.Row="2" HorizontalAlignment="Right"/>
+                    <TextBlock Text="{Binding Priority.Priority, StringFormat={}Приоритетность: {0}}"  Grid.Row="3" HorizontalAlignment="Left"/>
+                        <Button x:Name="But_edit" Click="But_edit_Click" HorizontalAlignment="Right" Content="Изменить" Grid.Column="3" />
 
                     </Grid>
             </DataTemplate>
