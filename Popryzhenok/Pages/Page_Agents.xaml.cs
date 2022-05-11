@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Popryzhenok.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,11 @@ namespace Popryzhenok.Pages
         {
             InitializeComponent();
             LVAgents.ItemsSource = PopryzhenokEntities.GetContext().AgentCompany.ToList();
+        }
+
+        private void But_edit_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Page_EditAdd((sender as Button).DataContext as AgentCompany));
         }
     }
 }

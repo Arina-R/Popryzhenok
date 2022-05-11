@@ -89,6 +89,9 @@
     <Compile Include="Pages\Page_Agents.xaml.cs">
       <DependentUpon>Page_Agents.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Page_Edit.xaml.cs">
+      <DependentUpon>Page_Edit.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Priority.cs">
       <DependentUpon>Model_Popryzhenok.tt</DependentUpon>
     </Compile>
@@ -116,6 +119,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\Page_Agents.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page_Edit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,6 +178,7 @@
       <DependentUpon>Model_Popryzhenok.edmx</DependentUpon>
       <LastGenOutput>Model_Popryzhenok.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Попрыженок.ico" />
     <Resource Include="Resources\picture.png" />
   </ItemGroup>
   <ItemGroup>
